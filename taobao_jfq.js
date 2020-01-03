@@ -2,13 +2,13 @@
  * @Author: gxcuit 
  * @Date: 2020-01-03 07:54:10 
  * @Last Modified by: gxcuit
- * @Last Modified time: 2020-01-03 13:10:59
+ * @Last Modified time: 2020-01-03 15:11:54
  * @packagename: com.gxcuit.autotb.jfq
  */
 
 function toastError(error) {
     console.error(error);
-    toast('error! '+error);
+    toast('error! '+'['+currentPackage+']'+error);
 }
 
  
@@ -44,7 +44,12 @@ if (qd) {
 //2. 浏览
 var go_view = textContains('去浏览').findOnce();
 if (!go_view) {
-    toastError("不存在‘去浏览’");
+    sleep(1000);
+    var count = textContains('已完成').find().size();
+    if (count>3) {
+          toastError('没找到去浏览，存在'+count+"个’已完成‘");
+    }
+  
 }
 
 
