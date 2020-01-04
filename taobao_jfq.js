@@ -62,7 +62,7 @@ while (go_view) {
     
     go_view.click(); 
     sleep(5000);
-    toastLog('当前浏览的是'+go_view).text();
+    toastLog('当前浏览的是'+go_view.text());
     //scrollDown();
     swipe(device.width/2,device.height/1.5,device.width/2,device.height/4,2000);
     sleep(1000*20);
