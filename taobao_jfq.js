@@ -23,13 +23,16 @@ if (!launch('com.taobao.taobao')) {
     toastLog('您安装淘宝了吗？');  
 }
 sleep(5000);
+toast('进入淘宝，请等待');
 //console.log(currentPackage());
 
 if (currentPackage()=='com.taobao.taobao') {  
     click(800,1200);
-    sleep(5000);
+    toast('进入农场，请等待');
+    sleep(8000);
     click(970,1647);
-    sleep(3000);
+    toast('正在打开-集福气');
+    sleep(5000);
 }else{
     toastError('当前包名+'+currentPackage());
 }
@@ -56,12 +59,14 @@ if (!go_view) {
 
 
 while (go_view) {
-    console.log('当前浏览的是'+go_view);
+    
     go_view.click(); 
-    sleep(2000);
+    sleep(5000);
+    toastLog('当前浏览的是'+go_view).text();
     //scrollDown();
-    swipe(device.width/2,device.height/1.5,device.width/2,device.height/4,1000);
+    swipe(device.width/2,device.height/1.5,device.width/2,device.height/4,2000);
     sleep(1000*20);
+    toast("--已完成 "+go_view.text());
     back();
     sleep(1500);
     //为了刷新任务信息，点击关闭×按钮
