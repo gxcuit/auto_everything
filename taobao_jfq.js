@@ -29,6 +29,7 @@ if (currentPackage()=='com.taobao.taobao') {
     click(800,1200);
     sleep(5000);
     click(970,1647);
+    sleep(3000);
 }else{
     toastError('当前包名+'+currentPackage());
 }
@@ -66,6 +67,7 @@ while (go_view) {
     var close = className('android.widget.Button').clickable().find();
     if (close) {
         close.click();
+        sleep(3000);
     }
     //点集福气
     click(970,1647);
