@@ -59,7 +59,8 @@ while (go_view) {
     console.log('当前浏览的是'+go_view);
     go_view.click(); 
     sleep(2000);
-    scrollDown();
+    //scrollDown();
+    swipe(device.width/2,device.height/1.5,device.width/2,device.height/4,1000);
     sleep(1000*20);
     back();
     sleep(1500);
