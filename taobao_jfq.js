@@ -2,7 +2,7 @@
  * @Author: gxcuit 
  * @Date: 2020-01-03 07:54:10 
  * @Last Modified by: gxcuit
- * @Last Modified time: 2020-01-03 15:11:54
+ * @Last Modified time: 2020-01-06 08:36:54
  * @packagename: com.gxcuit.autotb.jfq
  */
 
@@ -27,8 +27,15 @@ toast('进入淘宝，请等待');
 //console.log(currentPackage());
 
 if (currentPackage()=='com.taobao.taobao') {  
-    click(800,1200);
-    toast('进入农场，请等待');
+    //click(800,1200);
+    var fl = id('com.taobao.taobao:id/dx_root').findOnce(3).child(0).child(5);
+    if (fl) {
+        fl.click();
+        toast('进入农场，请等待');
+    }else{
+        toastError('无法进入农场');
+    }
+    
     sleep(8000);
     click(970,1647);
     toast('正在打开-集福气');
