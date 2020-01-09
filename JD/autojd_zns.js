@@ -3,7 +3,7 @@
  * @Author: gxcuit 
  * @Date: 2020-01-06 14:46:07 
  * @Last Modified by: gxcuit
- * @Last Modified time: 2020-01-06 15:10:57
+ * @Last Modified time: 2020-01-08 08:34:14
  */
 
 function toastError(error) {
@@ -15,7 +15,7 @@ function toastError(error) {
 
 
 auto.waitFor();
-var sTime = 3000;
+var sTime = 5000;
 // var bz = text('做任务拿爆竹').clickable().findOnce();
 // console.log(bz);
 // if (bz) {
