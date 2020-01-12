@@ -1,6 +1,14 @@
 # auto_taobao
 淘宝支付宝auto.js 脚本合集
 
+
+
+
+# 【2020/01/12】#
+
+**暂停懒人版的更新！项目更名为'auto_everything'**需要打开相应的任务界面（截图如下）
+![](https://attach.52pojie.cn/forum/202001/12/154548r88tt6u38tsdzvrg.jpg) 
+
 # 1.  京东脚本 #
 
 ## 1.1 京东炸年兽(autojd_zns.js) ##
@@ -19,11 +27,10 @@
 # 2. 淘宝脚本 #
 ## 2.1淘宝集福气（taobao_jfq） ##
 
-**使用说明：（懒人版）**
+**使用说明：（脚本版）**
 
-1. 这个是懒人版的app
-2. 首先关闭淘宝app（包括从最近任务中关闭）
-3. 运行脚本，[也可直接安装打包好的app](https://github.com/gxcuit/auto_taobao/releases)
+1. 打开相对应的任务界面，运行脚本即可
+![](https://attach.52pojie.cn/forum/202001/12/154548r88tt6u38tsdzvrg.jpg)
 
 
 
