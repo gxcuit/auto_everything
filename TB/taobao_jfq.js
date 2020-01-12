@@ -6,6 +6,7 @@
  * @packagename: com.gxcuit.autotb.jfq
  */
 
+
 function toastError(error) {
     console.error(error);
     toast('error! ' + '[' + currentPackage + ']' + error);
@@ -31,22 +32,19 @@ auto.waitFor();
 // });
 setScreenMetrics(device.width, device.height);
 
-if (!launch('com.taobao.taobao')) {
-    toastLog('您安装淘宝了吗？');
-}
-sleep(5000);
-toast('进入淘宝，请等待');
-//console.log(currentPackage());
+// if (!launch('com.taobao.taobao')) {
+//     toastLog('您安装淘宝了吗？');
+// }
+// toast('进入淘宝，请等待');
+// sleep(5000);
+
+// //console.log(currentPackage());
 
 if (currentPackage() == 'com.taobao.taobao') {
-    jrnc();
-
-    sleep(8000);
-    click(970, 1647);
-    toast('正在打开-集福气');
-    sleep(5000);
+   
 } else {
     toastError('当前包名+' + currentPackage());
+    exit();
 }
 
 // 1. 先签到
